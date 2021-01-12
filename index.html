@@ -30,12 +30,17 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
+<header class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
 
-		<nav class="navbar row">
+		<nav class="navbar row" role="navigation" aria-label="Pages du site">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo La chouette agence" height="40" /></a>
+				<a class="navbar-brand" href="index.html">
+					<picture>
+						<source type="image/webp" srcset="img/webp/la-chouette-agence.webp">
+						<img src="img/la-chouette-agence.png" title="Logo de la marque" alt="Une chouette stylisée accompagné du texte : La chouette agence" height="40" />
+					</picture>
+				</a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -54,15 +59,18 @@
 			</div>
 		</nav>
 	</div>
-</div>
+</header>
 <!-- bloc-0 END -->
 
 <!-- bloc-1-presentation -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
+<section role="banner" class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
-				<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="Logo La chouette agence" />
+				<picture>
+					<source type="image/webp" srcset="img/webp/logo.webp">
+					<img src="img/logo.png" class="center-block image-resize-mode" width="100" title="Logo de la marque" alt="Chouette stylisée" />
+				</picture>
 				<h1 class="text-center hero-bloc-text tc-white ">
 					La chouette agence.
 				</h1>
@@ -72,11 +80,11 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-1-presentation END -->
 
 <!-- bloc-2-services -->
-<div class="bloc bgc-white l-bloc" id="bloc-2-services">
+<main role="main" aria-label="presentation" class="bloc bgc-white l-bloc" id="bloc-2-services">
 	<div class="container bloc-md">
 		<div class="row">
 			<div class="col-sm-12 text-center">
@@ -86,7 +94,7 @@
 		<div class="row voffset-lg med-width-whitespace">
 			<div class="col-sm-4">
 				<div class="text-center">
-					<span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+					<span role="img" class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
 				<h3 class="mg-md text-center">
 					Web design
@@ -97,7 +105,7 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="text-center">
-					<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+					<span role="img" class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
 				<h3 class="mg-md text-center">
 					&nbsp;Stratégie
@@ -108,7 +116,7 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="text-center">
-					<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+					<span role="img" class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
 				<h3 class="mg-md text-center">
 					Illustrations
@@ -127,11 +135,11 @@
 			</figure>
 		</div>
 	</div>
-</div>
+</main>
 <!-- bloc-2-services END -->
 
 <!-- bloc-3-what-i-do -->
-<div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
+<section class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace black-background">
 			<div class="col-sm-12">
@@ -144,11 +152,11 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-3-what-i-do END -->
 
 <!-- bloc-4-portfolio -->
-<div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
+<section role="main" aria-label="exemples" class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12 text-center">
@@ -157,7 +165,12 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" /></a>
+				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
+					<picture>
+						<source type="image/webp" srcset="img/webp/1.webp">
+						<img src="img/1.jpg" title="Journaux" alt="Des journaux de différentes couleurs sont empilés les uns sur les autres." class="img-responsive portfolio-thumb" />
+					</picture>
+				</a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -166,7 +179,12 @@
 				</p>
 			</div>
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
+				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
+					<picture>
+						<source type="image/webp" srcset="img/webp/2.webp">
+						<img src="img/2.jpg" class="img-responsive portfolio-thumb" title="Photographe en action" alt="Photographe avec son appareil posé sur un trepied en face de lui." />
+					</picture>
+				</a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
@@ -177,7 +195,12 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
+				<a href="#" data-lightbox="img/3.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
+					<picture>
+						<source type="image/webp" srcset="img/webp/3.webp">
+						<img src="img/3.jpg" class="img-responsive portfolio-thumb" title="Collection" alt="Presentation bien ordonné d'une collection d'accessoire."/>
+					</picture>
+				</a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -186,7 +209,12 @@
 				</p>
 			</div>
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /></a>
+				<a href="#" data-lightbox="img/4.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
+					<picture>
+						<source type="image/webp" srcset="img/webp/4.webp">
+						<img src="img/4.jpg" class="img-responsive portfolio-thumb" title="Agence de marriage" alt="Deux membres de l'agence de mariage travaillant sur leur nouveau site web." />
+					</picture>
+				</a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
 				</h3>
@@ -196,58 +224,60 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-4-portfolio END -->
 
 <!-- bloc-5-cta -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
 	<div class="container bloc-lg">
-		<div class="row">
-			<h2 class="mg-md text-center tc-white">
-				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
-			</h2>
-			<div class="col-sm-12 text-center">
-				<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+		<div class="row tight-width-whitespace black-background">
+			<div class="col-sm-12">
+				<h2 class="mg-md text-center tc-white">
+					Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
+				</h2>
+				<div class="col-sm-12 text-center">
+					<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-5-cta END -->
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer role="nav" aria-labe="Reseaux sociaux" class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
+				<p class="text-center text-color-contrasted">
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="index.html"><span role="img" class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="index.html"><span role="img" class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="index.html"><span role="img" class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="index.html"><span role="img" class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
 </div>
